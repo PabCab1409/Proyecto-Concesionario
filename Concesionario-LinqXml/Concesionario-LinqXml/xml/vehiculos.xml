@@ -1,0 +1,38 @@
+<caracteristicas>
+<marca marca="Peugeot">
+	<modelos>
+		<modelo>2008</modelo>
+		<modelo>3008</modelo>
+		<modelo>5008</modelo>
+	</modelos>
+	<versiones>
+		<version>Allure</version>
+		<version>GT-Line</version>
+		<version>GT</version>
+	</versiones>
+</marca>
+<marca marca="Kia">
+<modelos>
+<modelo>Sportage</modelo>
+<modelo>Sorento</modelo>
+<modelo>Niro</modelo>
+</modelos>
+<versiones>
+<version>Edition</version>
+<version>X-Line</version>
+<version>Drive</version>
+</versiones>
+</marca>
+<marca marca="Hyundai">
+<modelos>
+<modelo>Tucson</modelo>
+<modelo>Santa-Fe</modelo>
+<modelo>Kona</modelo>
+</modelos>
+<versiones>
+<version>klass</version>
+<version>Maxx</version>
+<version>Tecno</version>
+</versiones>
+</marca>
+</caracteristicas>

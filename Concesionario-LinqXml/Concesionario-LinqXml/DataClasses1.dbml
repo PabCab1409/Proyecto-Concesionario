@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ConcesionarioLinqXml" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-UCBM6G0\DAM2;Initial Catalog=ConcesionarioLinqXml;Integrated Security=True;Pooling=False" SettingsObjectName="Concesionario_LinqXml.Properties.Settings" SettingsPropertyName="ConcesionarioLinqXmlConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Vehiculos" Member="Vehiculos">
+    <Type Name="Vehiculos">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Modelo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Combustible" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Foto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ex1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ex2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ex3" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Ex4" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

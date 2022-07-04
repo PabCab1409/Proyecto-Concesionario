@@ -1,0 +1,9 @@
+﻿<Application x:Class="Concesionario_LinqXml.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Concesionario_LinqXml"
+             StartupUri="\Clases\Window1.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

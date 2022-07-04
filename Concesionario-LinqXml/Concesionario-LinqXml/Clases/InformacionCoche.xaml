@@ -1,0 +1,104 @@
+﻿<Page x:Class="Concesionario_LinqXml.Clases.InformacionCoche"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Concesionario_LinqXml.Clases"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1430"
+      Title="InformacionCoche">
+
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="25px"></Setter>
+            <Setter Property="FontFamily" Value="Fonts/#Aileron-Black"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="FontWeight" Value="Bold" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="FontFamily" Value="Fonts/#Aileron-Black"></Setter>
+            <Setter Property="FontSize" Value="35px"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Image" x:Key="flechaAtras">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.9" ScaleY="0.9"></ScaleTransform>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Grid" x:Key="gridCoche">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF3F3F3F"/>
+                    <Setter Property="Label.Foreground" Value="White"/>
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.05" ScaleY="1.05"></ScaleTransform>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!--FLecha atras-->
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Click="Button_Click"  VerticalAlignment="Center" Margin="10,0,0,0">
+                <Image Source="/img/flechaAtras.png" VerticalAlignment="Center" Height="40" Width="40" Style="{StaticResource flechaAtras}"></Image>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <TextBlock TextDecorations="None"> <ContentPresenter /></TextBlock>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+
+        <!--Informacion coche-->
+        <Grid Grid.Row="1" Name="panelImagenCoche">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="550"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Name="stackPanelInfoCoche" Margin="30">
+            
+            </StackPanel>
+
+        </Grid>
+
+
+        <Frame x:Name="paginaInformacionCoche" Grid.ColumnSpan="2" Grid.RowSpan="2"></Frame>
+    </Grid>
+</Page>
